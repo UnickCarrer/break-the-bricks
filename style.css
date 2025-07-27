@@ -1,0 +1,79 @@
+ html, body {
+      height: 100%;
+      margin: 0;
+      background: linear-gradient(120deg, #2b5876, #4e4376 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      user-select: none;
+    }
+    .game-wrapper {
+      background: #252850;
+      border-radius: 18px;
+      box-shadow: 0 3px 24px #1a145615;
+      padding: 22px 28px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 0.4em;
+      font-size: 2em;
+      letter-spacing: 2px;
+      font-weight: 700;
+    }
+    .canvas-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #16182d;
+      border-radius: 14px;
+      margin-bottom: 20px;
+      box-shadow: 0 1px 12px #10132e57;
+    }
+    #gameCanvas {
+      background: #222444;
+      border-radius: 14px;
+      display: block;
+    }
+    .status-panel {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 14px;
+      font-size: 1.1em;
+    }
+    #msg {
+      min-height: 2em;
+      text-align: center;
+      margin-bottom: 12px;
+      font-size: 1.25em;
+      font-weight: 600;
+      color: #ffed65;
+    }
+    .btn {
+      display: inline-block;
+      padding: 11px 30px;
+      border: none;
+      border-radius: 22px;
+      background: linear-gradient(90deg, #ff5e62, #ff9966);
+      color: white;
+      font-weight: 700;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.3s;
+      box-shadow: 0 2px 8px #0003;
+      margin: 0 auto;
+      display: block;
+    }
+    .btn:hover {
+      background: linear-gradient(90deg, #ff9966, #ff5e62);
+    }
+    @media (max-width: 540px) {
+      .game-wrapper {
+        padding: 6vw 2vw;
+      }
+      #gameCanvas {
+        width: 84vw !important;
+        height: 50vw !important;
+      }
+    }
